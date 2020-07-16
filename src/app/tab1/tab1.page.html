@@ -34,7 +34,6 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content padding>
   <img class="icon" src="assets/icon/idea.png" alt="">
 <ion-item>
@@ -47,5 +46,12 @@
 </ion-item>
 <br>
 <ion-button expand="block"> Entrar </ion-button>
+<ion-row>
+  <ion-col>
+    <ion-button type="submit" color="danger" (click)="onLoginGoogle()" expand="block"
+      >Entrar con Google
+    </ion-button>
+  </ion-col>
+</ion-row>
 <ion-button expand="block"> Registrarse </ion-button>
 </ion-content>
