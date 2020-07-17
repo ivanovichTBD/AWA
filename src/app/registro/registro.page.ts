@@ -4,10 +4,10 @@ import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-register',
-  templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  templateUrl: './registro.page.html',
+  styleUrls: ['./registro.page.scss'],
 })
-export class RegisterPage implements OnInit {
+export class RegistroPage implements OnInit {
 
   constructor(private authSvc:AuthService) { }
 
