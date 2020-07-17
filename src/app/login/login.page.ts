@@ -24,7 +24,25 @@ export class LoginPage implements OnInit {
    });
     }
     Registrarse(){
-      this.router.navigate(['registro']);
+      this.router.navigate(['Registro']);
+    }
+    async onLoginGoogle(){
+      try {
+        const user = await this.auth.loginGoogle();
+        if (user) {
+          const isVerified = this.auth.isEmailVerified(user);
+     
+          //this.redirectUser(isVerified);
+     
+          console.log('verified->', isVerified);
+          this.router.navigate(['/tabs/tab2'])
+    
+        }
+      } catch (error) {
+        alert('no estas registrado');
+        this.router.navigate(['/Registro']);
+      console.log( error);
+     }
     }
     
   }
