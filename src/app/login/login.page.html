@@ -1,30 +1,31 @@
 <ion-header>
-  <ion-toolbar color ="primary">
+  <ion-toolbar color="primary">
     <ion-title>BIENVENIDO A CONTROL-Z</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding class="background">
-    <ion-grid>
-        <ion-row>
-          <ion-col col-2 col-sm-4 col-md-3 col-lg-2 col-ml-2 >
-            <ion-card padding>  
-              
-  <ion-img [src]="'https://1.bp.blogspot.com/-PdRRsEGi4E0/T5EYs23DZFI/AAAAAAAAOiQ/vfnhKvD4dq4/s1600/book.png'" style="height:148px" ></ion-img>
-<ion-item>
-  <ion-label position="floating"> Correo electrónico </ion-label>
-  <ion-input [(ngModel)]="email" type="text" name="email"></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating"> Contraseña </ion-label>
-  <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
-</ion-item>
-<br>
-<ion-button (click)="Loguearse()" expand="block"> Entrar </ion-button>
-<ion-button (click)="Registrarse()" expand="block"> Registrarse </ion-button>
-</ion-card>
-</ion-col>
-</ion-row>
-</ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2 col-sm-4 col-md-3 col-lg-2 col-ml-2>
+        <ion-card padding>
+
+          <ion-img [src]="'https://1.bp.blogspot.com/-PdRRsEGi4E0/T5EYs23DZFI/AAAAAAAAOiQ/vfnhKvD4dq4/s1600/book.png'"
+            style="height:148px"></ion-img>
+          <ion-item>
+            <ion-label position="floating"> Correo electrónico </ion-label>
+            <ion-input [(ngModel)]="email" type="text" name="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating"> Contraseña </ion-label>
+            <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
+          </ion-item>
+          <br>
+          <ion-button (click)="Loguearse()" expand="block"> Entrar </ion-button>
+          <ion-button (click)="Registrarse()" expand="block"> Registrarse </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
