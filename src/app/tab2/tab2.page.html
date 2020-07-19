@@ -1,16 +1,22 @@
-<ion-header [translucent]="true"  >
- 
-  <ion-toolbar color="secondary ion-float-left ion-padding-start">
-    
-    <ion-title class="ion-text-center">
-      
-      Estudiante 
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Estudiante
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-nav class="page-nav">
+  <div class="container">
+      <a href="/index.htm" class="active">Acvidad</a>
+      <a href="/about.htm">Entrega de actividad</a>
+      <a href="/schedule.htm">escribir texto</a>
+      <a href="/register.htm">grabar audios</a>
+      <a href="/location.htm">Seguimiento</a>
+  </div>
+</ion-nav>
 
 <ion-content [fullscreen]="true">
-  <ion-button color="warning" expand="block">Clases inscritas</ion-button>
+  <!--<ion-button color="warning" expand="block">Clases inscritas</ion-button>
 
   <ion-button color="warning" expand="block">inscribirse a Clase</ion-button>
 
@@ -20,5 +26,75 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <app-explore-container name="Tab 2 page"></app-explore-container>-->
+  <ion-list>
+    <ion-list-header>
+      Actividades
+    </ion-list-header>
+
+    <ion-item (click)="verActividades()">
+     
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+    
+      <ion-label>
+        <h2>Ver Actividades</h2>
+       
+        <p>El estudiante podra ver sus actividades</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item (click)="hacerActividades()">
+      
+        <ion-icon name="podium-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Hacer Actividades</h2>
+       
+        <p>El estudiante podra hacer sus actividades</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item (click)="escribirTexto()">
+     
+      <ion-icon name="create-outline" slot="start"></ion-icon>
+     
+      <ion-label>
+        <h2>Escribir texto</h2>
+      
+        <p>El estudiante podra escribir texto</p>
+      </ion-label>
+    </ion-item>
+
+    
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Otras opciones
+    </ion-list-header>
+
+    <ion-item (click)="grabarAudio()">
+     
+        <ion-icon name="radio-button-on-outline" slot="start"></ion-icon>
+      
+      <ion-label>
+        <h2>Grabar audio</h2>
+        
+        <p>El estudiante podra grabar audio</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item (click)="seguimientoEstudiante()">
+      
+        <ion-icon name="eye-outline" slot="start"></ion-icon>
+      
+      <ion-label>
+        <h2>Seguimiento</h2>
+        
+        <p>El estudiante podra ver su seguimiento</p>
+      </ion-label>
+    </ion-item>
+
+   
+
+  </ion-list>
 </ion-content>
