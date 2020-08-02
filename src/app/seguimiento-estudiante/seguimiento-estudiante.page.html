@@ -1,9 +1,74 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>seguimiento-estudiante</ion-title>
+    <ion-title>texto</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Tarea</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
+    <ion-content fullscreen>
+      <form onsubmit="processForm(event)">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item>
+            <ion-label position="stacked">Nombre <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Apellidos <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating ">Descripcion</ion-label>
+            
+              <ion-textarea placeholder="Escribe..." ></ion-textarea>
+            
+            
+          </ion-item>
+
+          
+
+
+        </ion-list>
+
+        <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin">Subir</ion-button>
+        </div>
+      </form>
+    </ion-content>
+    <ion-alert-controller></ion-alert-controller>
+  </ion-app>
+
+  <script>
+    const controller = document.querySelector('ion-alert-controller');
+    let firstName, lastName;
+
+    function processForm(event) {
+      event.preventDefault();
+      controller.create({
+        header: 'Account Created',
+        message: `Created account for: <b>${firstName} ${lastName}</b>`,
+        buttons: [{
+          text: 'OK'
+        }]
+      }).then(alert => alert.present());
+    }
+
+    function handleFirstNameValue(event) {
+      firstName = event.target.value;
+    }
+
+    function handleLastNameValue(event) {
+      lastName = event.target.value;
+    }
+  </script>
 </ion-content>
