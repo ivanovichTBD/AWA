@@ -36,7 +36,43 @@ const routes: Routes = [
   {
     path: 'seguimiento-estudiante',
     loadChildren: () => import('./seguimiento-estudiante/seguimiento-estudiante.module').then( m => m.SeguimientoEstudiantePageModule)
+  },  {
+    path: 'inscribirse',
+    loadChildren: () => import('./inscribirse/inscribirse.module').then( m => m.InscribirsePageModule)
+  },
+  {
+    path: 'cursos-profesor',
+    loadChildren: () => import('./cursos-profesor/cursos-profesor.module').then( m => m.CursosProfesorPageModule)
+  },
+  {
+    path: 'new-cursos-profesor',
+    loadChildren: () => import('./new-cursos-profesor/new-cursos-profesor.module').then( m => m.NewCursosProfesorPageModule)
+  },
+  {
+    path: 'adm-estudiante-profesor',
+    loadChildren: () => import('./adm-estudiante-profesor/adm-estudiante-profesor.module').then( m => m.AdmEstudianteProfesorPageModule)
+  },
+  {
+    path: 'actividad-profesor',
+    loadChildren: () => import('./actividad-profesor/actividad-profesor.module').then( m => m.ActividadProfesorPageModule)
+  },
+  {
+    path: 'profesor-grabar',
+    loadChildren: () => import('./profesor-grabar/profesor-grabar.module').then( m => m.ProfesorGrabarPageModule)
+  },
+  {
+    path: 'profesor-texto',
+    loadChildren: () => import('./profesor-texto/profesor-texto.module').then( m => m.ProfesorTextoPageModule)
+  },
+  {
+    path: 'profesor-file',
+    loadChildren: () => import('./profesor-file/profesor-file.module').then( m => m.ProfesorFilePageModule)
+  },
+  {
+    path: 'profesor-seguimiento',
+    loadChildren: () => import('./profesor-seguimiento/profesor-seguimiento.module').then( m => m.ProfesorSeguimientoPageModule)
   }
+
 
 
 

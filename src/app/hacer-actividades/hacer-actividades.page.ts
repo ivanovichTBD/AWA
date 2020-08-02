@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-hacer-actividades',
   templateUrl: './hacer-actividades.page.html',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HacerActividadesPage implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
+  }
+  grabarAudio(){
+    this.router.navigate(['grabar-audio']);
+  }
+  seguimientoEstudiante(){
+    this.router.navigate(['seguimiento-estudiante']);
   }
 
 }

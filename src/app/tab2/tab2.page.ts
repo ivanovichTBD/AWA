@@ -18,14 +18,12 @@ export class Tab2Page  {
   hacerActividades(){
     this.router.navigate(['hacer-actividades']);
   }
-  escribirTexto(){
+  notificacion(){
     this.router.navigate(['escribir-texto']);
   }
-  grabarAudio(){
-    this.router.navigate(['grabar-audio']);
-  }
-  seguimientoEstudiante(){
-    this.router.navigate(['seguimiento-estudiante']);
+ 
+  inscribirse(){
+    this.router.navigate(['inscribirse']);
   }
 
   
