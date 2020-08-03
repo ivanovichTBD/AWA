@@ -14,7 +14,7 @@ export class ProfesorSeguimientoPage implements OnInit {
   doRefresh(event) {  
     console.log('Pull Event Triggered!');  
     setTimeout(() => {
-    this.dummyList = Array(5);
+    //this.dummyList = Array(5);
     event.target.complete();
     }, 1500); 
    } 
