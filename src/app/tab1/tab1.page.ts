@@ -6,13 +6,24 @@ import {Router} from '@angular/router'
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
   constructor(public router:Router) { 
     
   }
-
-  ngOnInit() {
+ngOnInit() {
 
   }
+  notificationPermit(){
+    Notification.requestPermission(function(result){
+      if (result !== 'granted'){
+        console.log("Notification permit: REJECTED")
+      } else{ 
+          console.log("Notification permit: ", result);
+        var notification = new Notification("Ingresaste a una clase");
+          //  subscribePush()
+      }
+    })}
+ 
   crearCurso(){
     this.router.navigate(['new-cursos-profesor'])
 

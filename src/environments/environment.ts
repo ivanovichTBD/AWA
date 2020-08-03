@@ -13,7 +13,9 @@ export const firebaseConfig= {
     storageBucket: "webavanzadas.appspot.com",
     messagingSenderId: "567169289834",
     appId: "1:567169289834:web:a22a0217ac9cf08e158413",
+    vapidKey: 'BGL-z5UR0wbDqsrZTqeRbkNsKTay3FfuEIda8YlJHo2JgW_drapX3h5ex-Q_4K8PkpOLSuKjnZ0r0kdPKPyJS8s',
     measurementId: "G-WHB8GFWXSJ"};
+    
 
 /*
  * For easier debugging in development mode, you can import the following file
