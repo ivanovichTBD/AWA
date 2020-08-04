@@ -71,6 +71,18 @@ const routes: Routes = [
   {
     path: 'profesor-seguimiento',
     loadChildren: () => import('./profesor-seguimiento/profesor-seguimiento.module').then( m => m.ProfesorSeguimientoPageModule)
+  },
+  {
+    path: 'lista-estudiantes-ma',
+    loadChildren: () => import('./lista-estudiantes-ma/lista-estudiantes-ma.module').then( m => m.ListaEstudiantesMaPageModule)
+  },
+  {
+    path: 'lista-estudiantes-fi',
+    loadChildren: () => import('./lista-estudiantes-fi/lista-estudiantes-fi.module').then( m => m.ListaEstudiantesFiPageModule)
+  },
+  {
+    path: 'lista-estudiantes-ma1',
+    loadChildren: () => import('./lista-estudiantes-ma1/lista-estudiantes-ma1.module').then( m => m.ListaEstudiantesMa1PageModule)
   }
 
 

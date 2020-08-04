@@ -11,11 +11,13 @@ export class NewCursosProfesorPage implements OnInit {
 
   ngOnInit() {
   }
-  async showAlert() {  
-    const alert = await this.alertCtrl.create({  
+  async showAlert() { 
     
-      message: 'incribirse a una clases',
-      buttons: ['Cancelar', 'Crear'] 
+    const alert = await this.alertCtrl.create({  
+      
+      message: 'codigo designado <br color="success">kjsdfsd4</br>',
+     
+      buttons: ['Crear'] 
     });  
     await alert.present();  
     const result = await alert.onDidDismiss();  
