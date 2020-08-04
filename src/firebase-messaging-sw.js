@@ -1,6 +1,6 @@
 //importScripts('https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js');
 //importScripts('https://www.gstatic.com/firebasejs/7.15.0/firebase-messaging.js');
-importScripts("ngsw-worker.js");
+//importScripts("ngsw-worker.js");
 /*
 firebase.initializeApp ({ 
     apiKey: "AIzaSyCvK8jQVKUAQ0j9i_vjX02MY2c6bCZ3UVA",

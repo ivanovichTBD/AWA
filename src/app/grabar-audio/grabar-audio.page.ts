@@ -109,7 +109,7 @@ export class GrabarAudioPage implements OnInit {
           this.copyFileToLocalDir(data[0].fullPath);
         }
       },
-      (err: CaptureError) => console.error(err)
+      (err: CaptureError) => console.log(err)
     );
   }
  
